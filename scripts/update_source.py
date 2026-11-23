@@ -15,7 +15,10 @@ API = "https://api.github.com"
 
 def fetch_json(url):
     req = urllib.request.Request(url, headers={
-        "User-Agent": "ios-source-updater",
+        # Browser-like UA: some sources (fastsign.dev) reject bot agents.
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) "
+                      "AppleWebKit/605.1.15 (KHTML, like Gecko) "
+                      "Version/18.0 Mobile/15E148 Safari/604.1",
         "Accept": "application/vnd.github+json",
     })
     token = os.environ.get("GITHUB_TOKEN")
@@ -89,13 +92,25 @@ def build_app_from_source(cfg):
     remote = fetch_json(cfg["sourceURL"])
     entries = [a for a in remote.get("apps", [])
                if a.get("bundleIdentifier") == bundle and a.get("downloadURL")]
+    if cfg.get("namePattern"):
+        name_re = re.compile(cfg["namePattern"])
+        entries = [a for a in entries if name_re.search(a.get("name", ""))]
+    if cfg.get("urlPattern"):
+        url_re = re.compile(cfg["urlPattern"])
+        entries = [a for a in entries if url_re.search(a.get("downloadURL", ""))]
     if not entries:
         raise RuntimeError(f"no entry for {bundle} in source {cfg['sourceURL']}")
 
     def entry_date(a):
         return a.get("versionDate") or a.get("date") or ""
 
-    entries.sort(key=entry_date, reverse=True)
+    def version_key(a):
+        parts = []
+        for p in str(a.get("version", "")).split("."):
+            parts.append((0, int(p), "") if p.isdigit() else (1, 0, p))
+        return parts
+
+    entries.sort(key=lambda a: (entry_date(a), version_key(a)), reverse=True)
     versions = []
     seen = set()
     for a in entries:
@@ -144,15 +159,39 @@ def build(cfg):
 def main():
     with open(os.path.join(ROOT, "sources.json"), encoding="utf-8") as f:
         config = json.load(f)
-    source = dict(config["source"])
-    source["apps"] = [build(cfg) for cfg in config["apps"]]
-    source["news"] = []
     out = os.path.join(ROOT, "apps.json")
+    previous = {}
+    if os.path.exists(out):
+        try:
+            with open(out, encoding="utf-8") as f:
+                for a in json.load(f).get("apps", []):
+                    previous[a.get("bundleIdentifier")] = a
+        except Exception:
+            previous = {}
+    source = dict(config["source"])
+    apps = []
+    failures = []
+    for cfg in config["apps"]:
+        try:
+            apps.append(build(cfg))
+        except Exception as e:
+            old = previous.get(cfg["bundleIdentifier"])
+            if old is not None:
+                print(f"WARN: {cfg['name']}: {e} -- keeping previous entry")
+                apps.append(old)
+            else:
+                print(f"ERROR: {cfg['name']}: {e}")
+                failures.append(cfg["name"])
+    source["apps"] = apps
+    source["news"] = []
     with open(out, "w", encoding="utf-8") as f:
         json.dump(source, f, ensure_ascii=False, indent=2)
         f.write("\n")
     for app in source["apps"]:
         print(f"{app['name']}: {app['version']} -> {app['downloadURL']}")
+    if failures:
+        print("FAILED apps:", ", ".join(failures))
+        return 1
     return 0
 
 
