@@ -75,11 +75,77 @@ def build_app(cfg):
     return app
 
 
+def _norm_date(value):
+    if value and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return value + "T00:00:00+00:00"
+    return value
+
+
+def build_app_from_source(cfg):
+    """Track an app mirrored from another AltStore-format source: copy the
+    newest entries for the bundle ID, keeping the original downloadURLs."""
+    bundle = cfg["bundleIdentifier"]
+    max_versions = int(cfg.get("maxVersions", 1))
+    remote = fetch_json(cfg["sourceURL"])
+    entries = [a for a in remote.get("apps", [])
+               if a.get("bundleIdentifier") == bundle and a.get("downloadURL")]
+    if not entries:
+        raise RuntimeError(f"no entry for {bundle} in source {cfg['sourceURL']}")
+
+    def entry_date(a):
+        return a.get("versionDate") or a.get("date") or ""
+
+    entries.sort(key=entry_date, reverse=True)
+    versions = []
+    seen = set()
+    for a in entries:
+        ver = str(a.get("version", ""))
+        if not ver or ver in seen:
+            continue
+        seen.add(ver)
+        versions.append({
+            "version": ver,
+            "date": _norm_date(entry_date(a)),
+            "downloadURL": a["downloadURL"],
+            "size": a.get("size", 0),
+            "localizedDescription": a.get("localizedDescription")
+                or f"{cfg['name']} {ver}",
+        })
+        if len(versions) >= max_versions:
+            break
+    if not versions:
+        raise RuntimeError(f"no usable version for {bundle} in source")
+    latest = versions[0]
+    first = entries[0]
+    app = {
+        "name": cfg["name"],
+        "bundleIdentifier": bundle,
+        "developerName": cfg.get("developerName") or first.get("developerName", ""),
+        "version": latest["version"],
+        "versionDate": latest["date"],
+        "downloadURL": latest["downloadURL"],
+        "size": latest["size"],
+        "versions": versions,
+    }
+    for key in ("subtitle", "localizedDescription", "iconURL", "tintColor"):
+        if cfg.get(key):
+            app[key] = cfg[key]
+    if "iconURL" not in app and first.get("iconURL"):
+        app["iconURL"] = first["iconURL"]
+    return app
+
+
+def build(cfg):
+    if cfg.get("type") == "source":
+        return build_app_from_source(cfg)
+    return build_app(cfg)
+
+
 def main():
     with open(os.path.join(ROOT, "sources.json"), encoding="utf-8") as f:
         config = json.load(f)
     source = dict(config["source"])
-    source["apps"] = [build_app(cfg) for cfg in config["apps"]]
+    source["apps"] = [build(cfg) for cfg in config["apps"]]
     source["news"] = []
     out = os.path.join(ROOT, "apps.json")
     with open(out, "w", encoding="utf-8") as f:
