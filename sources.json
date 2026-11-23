@@ -1,1 +1,21 @@
-{"apps":[{"assetExclude":"iOS16","assetPattern":"\\.ipa$","bundleIdentifier":"com.google.ios.youtube","developerName":"itzzace","localizedDescription":"Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded.","maxVersions":5,"name":"YTKACE","repo":"itzzace/ytkace","subtitle":"YouTube enhancer (SponsorBlock, downloads, background playback)"}],"source":{"identifier":"com.thatkyoww.ios-source","name":"Lane's iOS Source","subtitle":"GitHub 릴리스 IPA 자동 소스"}}
+{
+  "apps": [
+    {
+      "assetExclude": "iOS16",
+      "assetPattern": "\\.ipa$",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "itzzace",
+      "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded.",
+      "maxVersions": 5,
+      "name": "YTKACE",
+      "repo": "itzzace/ytkace",
+      "subtitle": "YouTube enhancer (SponsorBlock, downloads, background playback)",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/14/ce/45/14ce45d8-5ca6-1dfa-c4a5-4660061cf213/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
+    }
+  ],
+  "source": {
+    "identifier": "com.thatkyoww.ios-source",
+    "name": "Lane's iOS Source",
+    "subtitle": "GitHub 릴리스 IPA 자동 소스"
+  }
+}
