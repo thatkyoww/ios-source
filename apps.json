@@ -51,6 +51,62 @@
       "subtitle": "YouTube enhancer (SponsorBlock, downloads, background playback)",
       "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded.",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/14/ce/45/14ce45d8-5ca6-1dfa-c4a5-4660061cf213/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "SODA",
+      "bundleIdentifier": "com.snowcorp.soda",
+      "developerName": "SNOW",
+      "version": "10.5.0",
+      "versionDate": "2026-11-13T00:00:00+00:00",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-11-2026/SODA_10.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "size": 182206025,
+      "versions": [
+        {
+          "version": "10.5.0",
+          "date": "2026-11-13T00:00:00+00:00",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-11-2026/SODA_10.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "size": 182206025,
+          "localizedDescription": "Injected with Subscription Unlocked"
+        }
+      ],
+      "subtitle": "소다 카메라 — AppTesters 최신 버전 미러",
+      "localizedDescription": "Mirrors the latest SODA (Subscription Unlocked build) from the AppTesters IPA Repo. Latest version only.",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.soda.png"
+    },
+    {
+      "name": "X (NeoFreeBird)",
+      "bundleIdentifier": "com.atebits.Tweetie2",
+      "developerName": "NeoFreeBird",
+      "version": "7.3.1",
+      "versionDate": "2026-11-06T21:49:13Z",
+      "downloadURL": "https://github.com/NeoFreeBird/app/releases/download/v7.3.1/NeoFreeBird-sideloaded-X_7.3.1_12.39.ipa",
+      "size": 276966090,
+      "versions": [
+        {
+          "version": "7.3.1",
+          "date": "2026-11-06T21:49:13Z",
+          "downloadURL": "https://github.com/NeoFreeBird/app/releases/download/v7.3.1/NeoFreeBird-sideloaded-X_7.3.1_12.39.ipa",
+          "size": 276966090,
+          "localizedDescription": "X (NeoFreeBird) 7.3.1 (NeoFreeBird-sideloaded-X_7.3.1_12.39.ipa)"
+        },
+        {
+          "version": "6.10.1",
+          "date": "2026-11-06T21:48:51Z",
+          "downloadURL": "https://github.com/NeoFreeBird/app/releases/download/v6.10.1/NeoFreeBird-sideloaded-X_6.10.1_12.39.ipa",
+          "size": 276955541,
+          "localizedDescription": "X (NeoFreeBird) 6.10.1 (NeoFreeBird-sideloaded-X_6.10.1_12.39.ipa)"
+        },
+        {
+          "version": "7.3.0",
+          "date": "2026-10-28T18:16:07Z",
+          "downloadURL": "https://github.com/NeoFreeBird/app/releases/download/v7.3.0/NeoFreeBird-sideloaded-X_7.3.0_12.38.1.ipa",
+          "size": 273143491,
+          "localizedDescription": "X (NeoFreeBird) 7.3.0 (NeoFreeBird-sideloaded-X_7.3.0_12.38.1.ipa)"
+        }
+      ],
+      "subtitle": "공식 NeoFreeBird X 브랜딩 빌드",
+      "localizedDescription": "Tracks the official NeoFreeBird releases on GitHub. X-branded sideloaded build only (no TWIGalaxy, no Twitter branding). Version shown is the NeoFreeBird tweak version.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/30/ed/ad/30edad77-18a2-4e44-1276-1e530ff10d74/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg"
     }
   ],
   "news": []
