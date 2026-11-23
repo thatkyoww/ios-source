@@ -49,7 +49,8 @@
         }
       ],
       "subtitle": "YouTube enhancer (SponsorBlock, downloads, background playback)",
-      "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded."
+      "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/14/ce/45/14ce45d8-5ca6-1dfa-c4a5-4660061cf213/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
     }
   ],
   "news": []
