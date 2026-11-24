@@ -54,22 +54,18 @@ def build_app(cfg):
             "date": rel["published_at"],
             "downloadURL": asset["browser_download_url"],
             "size": asset["size"],
-            "localizedDescription": f"{cfg['name']} {version} ({asset['name']})",
+            "localizedDescription": cfg.get("localizedDescription")
+                or f"{cfg['name']} {version}",
         })
         if len(versions) >= max_versions:
             break
     if not versions:
         raise RuntimeError(f"no matching IPA asset found in releases of {repo}")
 
-    latest = versions[0]
     app = {
         "name": cfg["name"],
         "bundleIdentifier": cfg["bundleIdentifier"],
         "developerName": cfg.get("developerName", repo.split("/")[0]),
-        "version": latest["version"],
-        "versionDate": latest["date"],
-        "downloadURL": latest["downloadURL"],
-        "size": latest["size"],
         "versions": versions,
     }
     for key in ("subtitle", "localizedDescription", "iconURL", "tintColor"):
@@ -130,16 +126,20 @@ def build_app_from_source(cfg):
             break
     if not versions:
         raise RuntimeError(f"no usable version for {bundle} in source")
-    latest = versions[0]
+    # AllSign shows the latest version's localizedDescription in the list's
+    # description area: lead with our own summary (which build/tweak this
+    # is), then keep the original repo's notes after it.
+    if cfg.get("localizedDescription"):
+        remote_desc = versions[0].get("localizedDescription") or ""
+        combined = cfg["localizedDescription"]
+        if remote_desc and remote_desc not in combined:
+            combined = combined + "\n\n" + remote_desc
+        versions[0]["localizedDescription"] = combined
     first = entries[0]
     app = {
         "name": cfg["name"],
         "bundleIdentifier": bundle,
         "developerName": cfg.get("developerName") or first.get("developerName", ""),
-        "version": latest["version"],
-        "versionDate": latest["date"],
-        "downloadURL": latest["downloadURL"],
-        "size": latest["size"],
         "versions": versions,
     }
     for key in ("subtitle", "localizedDescription", "iconURL", "tintColor"):
@@ -182,13 +182,21 @@ def main():
             else:
                 print(f"ERROR: {cfg['name']}: {e}")
                 failures.append(cfg["name"])
+    def latest_date(app):
+        vs = app.get("versions") or []
+        if vs:
+            return vs[0].get("date") or ""
+        return app.get("versionDate") or ""
+
+    apps.sort(key=latest_date, reverse=True)
     source["apps"] = apps
     source["news"] = []
     with open(out, "w", encoding="utf-8") as f:
         json.dump(source, f, ensure_ascii=False, indent=2)
         f.write("\n")
     for app in source["apps"]:
-        print(f"{app['name']}: {app['version']} -> {app['downloadURL']}")
+        vs = app.get("versions") or [{}]
+        print(f"{app['name']}: {vs[0].get('version', '?')} -> {vs[0].get('downloadURL', '')}")
     if failures:
         print("FAILED apps:", ", ".join(failures))
         return 1
