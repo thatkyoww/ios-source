@@ -54,8 +54,6 @@ def build_app(cfg):
             "date": rel["published_at"],
             "downloadURL": asset["browser_download_url"],
             "size": asset["size"],
-            "localizedDescription": cfg.get("localizedDescription")
-                or f"{cfg['name']} {version}",
         })
         if len(versions) >= max_versions:
             break
@@ -119,22 +117,11 @@ def build_app_from_source(cfg):
             "date": _norm_date(entry_date(a)),
             "downloadURL": a["downloadURL"],
             "size": a.get("size", 0),
-            "localizedDescription": a.get("localizedDescription")
-                or f"{cfg['name']} {ver}",
         })
         if len(versions) >= max_versions:
             break
     if not versions:
         raise RuntimeError(f"no usable version for {bundle} in source")
-    # AllSign shows the latest version's localizedDescription in the list's
-    # description area: lead with our own summary (which build/tweak this
-    # is), then keep the original repo's notes after it.
-    if cfg.get("localizedDescription"):
-        remote_desc = versions[0].get("localizedDescription") or ""
-        combined = cfg["localizedDescription"]
-        if remote_desc and remote_desc not in combined:
-            combined = combined + "\n\n" + remote_desc
-        versions[0]["localizedDescription"] = combined
     first = entries[0]
     app = {
         "name": cfg["name"],
