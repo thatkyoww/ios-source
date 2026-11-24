@@ -4,90 +4,16 @@
   "subtitle": "GitHub 릴리스 IPA 자동 소스",
   "apps": [
     {
-      "name": "YTKACE",
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "itzzace",
-      "version": "1.1.9",
-      "versionDate": "2026-11-22T23:14:34Z",
-      "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.9/YTKACE_1.1.9_YouTube_21.47.6.ipa",
-      "size": 143414110,
-      "versions": [
-        {
-          "version": "1.1.9",
-          "date": "2026-11-22T23:14:34Z",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.9/YTKACE_1.1.9_YouTube_21.47.6.ipa",
-          "size": 143414110,
-          "localizedDescription": "YTKACE 1.1.9 (YTKACE_1.1.9_YouTube_21.47.6.ipa)"
-        },
-        {
-          "version": "1.1.8",
-          "date": "2026-11-15T20:23:33Z",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.8/YTKACE_1.1.8_YouTube_21.46.3.ipa",
-          "size": 141821255,
-          "localizedDescription": "YTKACE 1.1.8 (YTKACE_1.1.8_YouTube_21.46.3.ipa)"
-        },
-        {
-          "version": "1.1.7",
-          "date": "2026-11-10T21:54:48Z",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.7/YTKACE_1.1.7_YouTube_21.45.4.ipa",
-          "size": 140303052,
-          "localizedDescription": "YTKACE 1.1.7 (YTKACE_1.1.7_YouTube_21.45.4.ipa)"
-        },
-        {
-          "version": "1.1.5",
-          "date": "2026-11-03T22:13:29Z",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.5/YTKACE_1.1.5_YouTube_21.44.4.ipa",
-          "size": 139496330,
-          "localizedDescription": "YTKACE 1.1.5 (YTKACE_1.1.5_YouTube_21.44.4.ipa)"
-        },
-        {
-          "version": "1.1.4",
-          "date": "2026-10-25T17:33:06Z",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.4/YTKACE_1.1.4_YouTube_21.42.4.ipa",
-          "size": 138006169,
-          "localizedDescription": "YTKACE 1.1.4 (YTKACE_1.1.4_YouTube_21.42.4.ipa)"
-        }
-      ],
-      "subtitle": "YouTube enhancer (SponsorBlock, downloads, background playback)",
-      "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded.",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/14/ce/45/14ce45d8-5ca6-1dfa-c4a5-4660061cf213/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
-    },
-    {
-      "name": "SODA",
-      "bundleIdentifier": "com.snowcorp.soda",
-      "developerName": "SNOW",
-      "version": "10.5.0",
-      "versionDate": "2026-11-13T00:00:00+00:00",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-11-2026/SODA_10.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "size": 182206025,
-      "versions": [
-        {
-          "version": "10.5.0",
-          "date": "2026-11-13T00:00:00+00:00",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-11-2026/SODA_10.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "size": 182206025,
-          "localizedDescription": "Injected with Subscription Unlocked"
-        }
-      ],
-      "subtitle": "소다 카메라 — AppTesters 최신 버전 미러",
-      "localizedDescription": "Mirrors the latest SODA (Subscription Unlocked build) from the AppTesters IPA Repo. Latest version only.",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.soda.png"
-    },
-    {
       "name": "X",
       "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "@ipavault",
-      "version": "12.46",
-      "versionDate": "2026-11-23T00:00:00+00:00",
-      "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1509-X%2012.46%20NFB+TWI%207.3.1%20%5B@ipavault%5D.ipa",
-      "size": 292708756,
       "versions": [
         {
           "version": "12.46",
           "date": "2026-11-23T00:00:00+00:00",
           "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1509-X%2012.46%20NFB+TWI%207.3.1%20%5B@ipavault%5D.ipa",
           "size": 292708756,
-          "localizedDescription": "Tweaks: bhFLEX, BHTwitter, CallessKit, TWIGalaxy\n\n@ipavault | Builds of 📲🕊 X/Twitter 12.46\n\nBuilds:\n📲 X NFB 7.3.1\n📲 X NFB+TWI\n🕊 Twitter Branded NFB 7.3.1\n🕊 Twitter Branded NFB+TWI\nSteps to access NeoFreeBird settings:\n\n1.) Press and hold the 📲 or 🕊 icon at the top\n\nSteps to download videos:\n\n1.) From the timeline, click on the three horizontal dots on the top right-hand corner of any post\n2.) Tap ⬇️ Download media\n3.) Tap the desired resolution\n\nSteps to enable native replying:\n\n1.) Press and hold the 📲 or 🕊 icon at the top\n2.) Scroll down and tap Labs⚗️\n3.) Toggle OFF “Reply in web view”\n4.) To reply to any post, click on any post, tap the “Post your reply” text box, type your reply, and click reply\n\nSteps to access Liquid Glass settings:\n\n1.) Press and hold the 📲 or 🕊 icon at the top\n2.) Tap Labs ⚗️\n3.) Enable Liquid Glass\n✅ Patched\n✅ OpenInTwitter Safari Extension\n👃 TrollStore users, install this: https://t.me/ipavault/1508?comment=16773\n\nBuild by: @ipavault\n\n🕊 NeoFreeBird 7.3.1 by orionblur (forked from @nyaathea)\n✨ TWIGalaxy 1.14 by @Dens0r\n🔒 Decrypted by @FastDecryptBot\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
+          "localizedDescription": "Mirrors the X (NFB+TWI) combo build — NeoFreeBird + TWIGalaxy by @ipavault — from Alan's Gigantic Repo (lite). Latest version only.\n\nTweaks: bhFLEX, BHTwitter, CallessKit, TWIGalaxy\n\n@ipavault | Builds of 📲🕊 X/Twitter 12.46\n\nBuilds:\n📲 X NFB 7.3.1\n📲 X NFB+TWI\n🕊 Twitter Branded NFB 7.3.1\n🕊 Twitter Branded NFB+TWI\nSteps to access NeoFreeBird settings:\n\n1.) Press and hold the 📲 or 🕊 icon at the top\n\nSteps to download videos:\n\n1.) From the timeline, click on the three horizontal dots on the top right-hand corner of any post\n2.) Tap ⬇️ Download media\n3.) Tap the desired resolution\n\nSteps to enable native replying:\n\n1.) Press and hold the 📲 or 🕊 icon at the top\n2.) Scroll down and tap Labs⚗️\n3.) Toggle OFF “Reply in web view”\n4.) To reply to any post, click on any post, tap the “Post your reply” text box, type your reply, and click reply\n\nSteps to access Liquid Glass settings:\n\n1.) Press and hold the 📲 or 🕊 icon at the top\n2.) Tap Labs ⚗️\n3.) Enable Liquid Glass\n✅ Patched\n✅ OpenInTwitter Safari Extension\n👃 TrollStore users, install this: https://t.me/ipavault/1508?comment=16773\n\nBuild by: @ipavault\n\n🕊 NeoFreeBird 7.3.1 by orionblur (forked from @nyaathea)\n✨ TWIGalaxy 1.14 by @Dens0r\n🔒 Decrypted by @FastDecryptBot\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
         }
       ],
       "subtitle": "Alan 레포 NFB+TWI 합본 미러",
@@ -95,41 +21,78 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/30/ed/ad/30edad77-18a2-4e44-1276-1e530ff10d74/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
-      "name": "Reddit",
-      "bundleIdentifier": "com.reddit.Reddit",
-      "developerName": "@ipavault",
-      "version": "2026.46.0",
-      "versionDate": "2026-11-18T00:00:00+00:00",
-      "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1408-Reddit%202026.46.0%20%28RedditFilter%29%20%5B@ipavault%5D.ipa",
-      "size": 151808249,
+      "name": "YTKACE",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "itzzace",
       "versions": [
         {
-          "version": "2026.46.0",
-          "date": "2026-11-18T00:00:00+00:00",
-          "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1408-Reddit%202026.46.0%20%28RedditFilter%29%20%5B@ipavault%5D.ipa",
-          "size": 151808249,
-          "localizedDescription": "Tweaks: MoesReddit\n\n@ipavault | Reddit 2026.46.0 (RedditFilter)\n\nFollow these instructions if having issues logging in: https://t.me/ipavault/149\nInstructions for accessing RedditFilter (MoesReddit):\n\n1.) Press and hold anywhere with 3 fingers for a couple of seconds\n✅ Patched\n✅ OpenInReddit Safari Extension\n\nBuild by: @ipavault\n\nRedditFilter by level3tjg\nMoesReddit 4.7.1 by @moekanan\nDecrypted by @FastDecryptBot\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
+          "version": "1.1.9",
+          "date": "2026-11-22T23:14:34Z",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.9/YTKACE_1.1.9_YouTube_21.47.6.ipa",
+          "size": 143414110,
+          "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded."
+        },
+        {
+          "version": "1.1.8",
+          "date": "2026-11-15T20:23:33Z",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.8/YTKACE_1.1.8_YouTube_21.46.3.ipa",
+          "size": 141821255,
+          "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded."
+        },
+        {
+          "version": "1.1.7",
+          "date": "2026-11-10T21:54:48Z",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.7/YTKACE_1.1.7_YouTube_21.45.4.ipa",
+          "size": 140303052,
+          "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded."
+        },
+        {
+          "version": "1.1.5",
+          "date": "2026-11-03T22:13:29Z",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.5/YTKACE_1.1.5_YouTube_21.44.4.ipa",
+          "size": 139496330,
+          "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded."
+        },
+        {
+          "version": "1.1.4",
+          "date": "2026-10-25T17:33:06Z",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.4/YTKACE_1.1.4_YouTube_21.42.4.ipa",
+          "size": 138006169,
+          "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded."
         }
       ],
-      "subtitle": "Alan 레포 RedditFilter 빌드 미러",
-      "localizedDescription": "Mirrors the Reddit (RedditFilter build by @ipavault) from Alan's Gigantic Repo (lite). Latest version only.",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/5d/4f/075d4fc3-9818-1565-cbf4-75c49455eb45/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+      "subtitle": "YouTube enhancer (SponsorBlock, downloads, background playback)",
+      "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/14/ce/45/14ce45d8-5ca6-1dfa-c4a5-4660061cf213/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "Tor VPN",
+      "bundleIdentifier": "com.youssef.developer.Full-Browser",
+      "developerName": "AppTesters IPA Repo",
+      "versions": [
+        {
+          "version": "12.6",
+          "date": "2026-11-21T00:00:00+00:00",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2026/TORVPN_12.6_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
+          "size": 177826052,
+          "localizedDescription": "Mirrors TORVPN (Subscription Unlocked build) listed in Alan's Gigantic Repo (lite). Latest version only.\n\nTweaks: TorSuite\n\nInjected with Subscription Unlocked\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
+        }
+      ],
+      "subtitle": "Alan 레포 TORVPN 미러",
+      "localizedDescription": "Mirrors TORVPN (Subscription Unlocked build) listed in Alan's Gigantic Repo (lite). Latest version only.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/9b/5f/219b5f48-0de9-90e9-d6e6-c9bffc5cb243/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.jpeg/512x512bb.jpg"
     },
     {
       "name": "Google Photos",
       "bundleIdentifier": "com.google.photos",
       "developerName": "@ipavault",
-      "version": "8.2.0",
-      "versionDate": "2026-11-20T00:00:00+00:00",
-      "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1453-GooglePhotos%208.2.0%20%28Gunshot%29%20%5B@ipavault%5D.ipa",
-      "size": 176041160,
       "versions": [
         {
           "version": "8.2.0",
           "date": "2026-11-20T00:00:00+00:00",
           "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1453-GooglePhotos%208.2.0%20%28Gunshot%29%20%5B@ipavault%5D.ipa",
           "size": 176041160,
-          "localizedDescription": "Tweaks: GunshotJailed\n\n@ipavault | Builds of Google Photos (Gunshot 0.3.1)\n\nSpoofs Google Pixel 1 for Unlimited Original Quality Photo Uploads\nBuilds:\n▪Google Photos 8.2.0 (Gunshot) iOS 18+\n▪Google Photos 7.44.0 (Gunshot) iOS 17+\n▪Google Photos 7.20.2 (Gunshot) iOS 16.1+\nInstructions to access tweak settings:\n\n1.) Tap on your Google account profile picture on the top-right corner\n2.) Tap on GoToHP settings\n3.) Once Authenticated, tap Uploads\n4.) Tap Choose photos and videos or Choose album, then tap Add\nUse at your own risk; Google may patch this later. But currently works.\nRelease Notes\n\nBuild by: @ipavault\n\nGunshot 0.3.1 by tqmane\nDecrypted by @FastDecryptBot\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
+          "localizedDescription": "Mirrors Google Photos with the Gunshot tweak (by @ipavault) from Alan's Gigantic Repo (lite). Latest version only.\n\nTweaks: GunshotJailed\n\n@ipavault | Builds of Google Photos (Gunshot 0.3.1)\n\nSpoofs Google Pixel 1 for Unlimited Original Quality Photo Uploads\nBuilds:\n▪Google Photos 8.2.0 (Gunshot) iOS 18+\n▪Google Photos 7.44.0 (Gunshot) iOS 17+\n▪Google Photos 7.20.2 (Gunshot) iOS 16.1+\nInstructions to access tweak settings:\n\n1.) Tap on your Google account profile picture on the top-right corner\n2.) Tap on GoToHP settings\n3.) Once Authenticated, tap Uploads\n4.) Tap Choose photos and videos or Choose album, then tap Add\nUse at your own risk; Google may patch this later. But currently works.\nRelease Notes\n\nBuild by: @ipavault\n\nGunshot 0.3.1 by tqmane\nDecrypted by @FastDecryptBot\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
         }
       ],
       "subtitle": "Alan 레포 Gunshot 빌드 미러",
@@ -140,17 +103,13 @@
       "name": "Infuse",
       "bundleIdentifier": "com.firecore.infuse",
       "developerName": "@ipavault",
-      "version": "8.5.10",
-      "versionDate": "2026-11-20T00:00:00+00:00",
-      "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1450-Infuse%208.5.10%20%28Infuse%20Plus%202.6.1%29%20%5B@ipavault%5D.ipa",
-      "size": 99571535,
       "versions": [
         {
           "version": "8.5.10",
           "date": "2026-11-20T00:00:00+00:00",
           "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1450-Infuse%208.5.10%20%28Infuse%20Plus%202.6.1%29%20%5B@ipavault%5D.ipa",
           "size": 99571535,
-          "localizedDescription": "@ipavault | Builds of Infuse (Infuse Plus 2.6.1)\n\nBuilds:\n▪Infuse 8.5.10 (iOS 18+)\n▪Infuse 8.2.4 (iOS 15+)\n▪Infuse 7.8.4 (iOS 14+)\nInfuse Plus 2.6.1 Release Notes:\n\nNew features\n• A-B Loop: a new overlay button to loop a part of the video between two points (#96)\n• Set the start and end points from the button menu; the menu shows their times\n• Turning the loop on jumps to the start point; seeking outside the range turns it off\n• Loop points are shown as markers on the progress bar\n• Tap to Skip: tap anywhere on the progress bar to jump to that position\n• Control Center Skip Time: replaces the previous/next buttons in Control Center and on the Lock Screen with skip back/forward using your custom skip time (#106)\n• Episode offset for intros: set a per-season episode offset for shows whose episode numbering differs between TMDB and IntroDB\nImprovements\n• Custom skip time now also applies to the rewind buttons in the new player controls\n• Intro segments now load when you turn the option on during playback, not only when playback starts\nFixes\n• Fixed Remember Playback Speed not working on newer Infuse versions\n• Fixed empty intro segments from TheIntroDB marking the whole episode as an intro. IntroDB is now used as a fallback in that case\n• Fixed Dolby Atmos tracks showing as Multichannel (#103)\n• If Remember Playback Speed was on, set the speed to 1.0× manually once to reset the saved value\n\nBuild by: @ipavault\n\nInfuse Plus by @dvntm\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
+          "localizedDescription": "Mirrors Infuse (Plus 2.6.1 build by @ipavault) from Alan's Gigantic Repo (lite). Latest version only.\n\n@ipavault | Builds of Infuse (Infuse Plus 2.6.1)\n\nBuilds:\n▪Infuse 8.5.10 (iOS 18+)\n▪Infuse 8.2.4 (iOS 15+)\n▪Infuse 7.8.4 (iOS 14+)\nInfuse Plus 2.6.1 Release Notes:\n\nNew features\n• A-B Loop: a new overlay button to loop a part of the video between two points (#96)\n• Set the start and end points from the button menu; the menu shows their times\n• Turning the loop on jumps to the start point; seeking outside the range turns it off\n• Loop points are shown as markers on the progress bar\n• Tap to Skip: tap anywhere on the progress bar to jump to that position\n• Control Center Skip Time: replaces the previous/next buttons in Control Center and on the Lock Screen with skip back/forward using your custom skip time (#106)\n• Episode offset for intros: set a per-season episode offset for shows whose episode numbering differs between TMDB and IntroDB\nImprovements\n• Custom skip time now also applies to the rewind buttons in the new player controls\n• Intro segments now load when you turn the option on during playback, not only when playback starts\nFixes\n• Fixed Remember Playback Speed not working on newer Infuse versions\n• Fixed empty intro segments from TheIntroDB marking the whole episode as an intro. IntroDB is now used as a fallback in that case\n• Fixed Dolby Atmos tracks showing as Multichannel (#103)\n• If Remember Playback Speed was on, set the speed to 1.0× manually once to reset the saved value\n\nBuild by: @ipavault\n\nInfuse Plus by @dvntm\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
         }
       ],
       "subtitle": "Alan 레포 Infuse Plus 빌드 미러",
@@ -158,25 +117,38 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/7f/51/a17f51d9-0071-ca29-9b94-d4c82637c34f/AppIcon-0-0-1x_U007epad-0-11-0-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
-      "name": "Tor VPN",
-      "bundleIdentifier": "com.youssef.developer.Full-Browser",
-      "developerName": "AppTesters IPA Repo",
-      "version": "12.6",
-      "versionDate": "2026-11-21T00:00:00+00:00",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2026/TORVPN_12.6_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
-      "size": 177826052,
+      "name": "Reddit",
+      "bundleIdentifier": "com.reddit.Reddit",
+      "developerName": "@ipavault",
       "versions": [
         {
-          "version": "12.6",
-          "date": "2026-11-21T00:00:00+00:00",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2026/TORVPN_12.6_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
-          "size": 177826052,
-          "localizedDescription": "Tweaks: TorSuite\n\nInjected with Subscription Unlocked\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
+          "version": "2026.46.0",
+          "date": "2026-11-18T00:00:00+00:00",
+          "downloadURL": "https://fastsign.dev/d/8132kbnw/ipavault/1408-Reddit%202026.46.0%20%28RedditFilter%29%20%5B@ipavault%5D.ipa",
+          "size": 151808249,
+          "localizedDescription": "Mirrors the Reddit (RedditFilter build by @ipavault) from Alan's Gigantic Repo (lite). Latest version only.\n\nTweaks: MoesReddit\n\n@ipavault | Reddit 2026.46.0 (RedditFilter)\n\nFollow these instructions if having issues logging in: https://t.me/ipavault/149\nInstructions for accessing RedditFilter (MoesReddit):\n\n1.) Press and hold anywhere with 3 fingers for a couple of seconds\n✅ Patched\n✅ OpenInReddit Safari Extension\n\nBuild by: @ipavault\n\nRedditFilter by level3tjg\nMoesReddit 4.7.1 by @moekanan\nDecrypted by @FastDecryptBot\n\nNeed a certificate? 📲\nSupport me on Ko-Fi 😘\n\nGet pinged when any of your tweaks update. Free on Discord:\nhttps://discord.gg/mnJjP5qJRC"
         }
       ],
-      "subtitle": "Alan 레포 TORVPN 미러",
-      "localizedDescription": "Mirrors TORVPN (Subscription Unlocked build) listed in Alan's Gigantic Repo (lite). Latest version only.",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/9b/5f/219b5f48-0de9-90e9-d6e6-c9bffc5cb243/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.jpeg/512x512bb.jpg"
+      "subtitle": "Alan 레포 RedditFilter 빌드 미러",
+      "localizedDescription": "Mirrors the Reddit (RedditFilter build by @ipavault) from Alan's Gigantic Repo (lite). Latest version only.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/5d/4f/075d4fc3-9818-1565-cbf4-75c49455eb45/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "SODA",
+      "bundleIdentifier": "com.snowcorp.soda",
+      "developerName": "SNOW",
+      "versions": [
+        {
+          "version": "10.5.0",
+          "date": "2026-11-13T00:00:00+00:00",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-11-2026/SODA_10.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "size": 182206025,
+          "localizedDescription": "Mirrors the latest SODA (Subscription Unlocked build) from the AppTesters IPA Repo. Latest version only.\n\nInjected with Subscription Unlocked"
+        }
+      ],
+      "subtitle": "소다 카메라 — AppTesters 최신 버전 미러",
+      "localizedDescription": "Mirrors the latest SODA (Subscription Unlocked build) from the AppTesters IPA Repo. Latest version only.",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.soda.png"
     }
   ],
   "news": []
