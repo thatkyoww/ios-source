@@ -28,6 +28,21 @@ def fetch_json(url):
         return json.load(resp)
 
 
+def url_alive(url):
+    """True if a 1-byte range request on the URL succeeds."""
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) "
+                          "AppleWebKit/605.1.15 (KHTML, like Gecko) "
+                          "Version/18.0 Mobile/15E148 Safari/604.1",
+            "Range": "bytes=0-0",
+        })
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return resp.status in (200, 206)
+    except Exception:
+        return False
+
+
 def build_app(cfg):
     repo = cfg["repo"]
     include = re.compile(cfg.get("assetPattern", r"\.ipa$"))
@@ -78,7 +93,7 @@ def _norm_date(value):
     return value
 
 
-def build_app_from_source(cfg):
+def build_app_from_source(cfg, prev=None):
     """Track an app mirrored from another AltStore-format source: copy the
     newest entries for the bundle ID, keeping the original downloadURLs."""
     bundle = cfg["bundleIdentifier"]
@@ -105,6 +120,11 @@ def build_app_from_source(cfg):
         return parts
 
     entries.sort(key=lambda a: (entry_date(a), version_key(a)), reverse=True)
+    prev_urls = {}
+    if prev:
+        for pv in prev.get("versions") or []:
+            if pv.get("version") and pv.get("downloadURL"):
+                prev_urls[str(pv["version"])] = pv["downloadURL"]
     versions = []
     seen = set()
     for a in entries:
@@ -112,10 +132,19 @@ def build_app_from_source(cfg):
         if not ver or ver in seen:
             continue
         seen.add(ver)
+        dl = a["downloadURL"]
+        # Pin the download URL per version: some hosts (fastsign.dev)
+        # rotate a token segment in the path, and signer apps match
+        # their download records by exact URL, so a rotated URL makes
+        # an already-downloaded app look new. Keep the previous URL
+        # while it still serves the file.
+        old_dl = prev_urls.get(ver)
+        if old_dl and old_dl != dl and url_alive(old_dl):
+            dl = old_dl
         versions.append({
             "version": ver,
             "date": _norm_date(entry_date(a)),
-            "downloadURL": a["downloadURL"],
+            "downloadURL": dl,
             "size": a.get("size", 0),
         })
         if len(versions) >= max_versions:
@@ -137,9 +166,9 @@ def build_app_from_source(cfg):
     return app
 
 
-def build(cfg):
+def build(cfg, prev=None):
     if cfg.get("type") == "source":
-        return build_app_from_source(cfg)
+        return build_app_from_source(cfg, prev)
     return build_app(cfg)
 
 
@@ -160,7 +189,7 @@ def main():
     failures = []
     for cfg in config["apps"]:
         try:
-            apps.append(build(cfg))
+            apps.append(build(cfg, previous.get(cfg["bundleIdentifier"])))
         except Exception as e:
             old = previous.get(cfg["bundleIdentifier"])
             if old is not None:
