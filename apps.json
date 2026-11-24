@@ -4,7 +4,7 @@
   "subtitle": "GitHub 릴리스 IPA 자동 소스",
   "apps": [
     {
-      "name": "X",
+      "name": "X (NFB+TWI)",
       "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "@ipavault",
       "versions": [
@@ -76,7 +76,7 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/9b/5f/219b5f48-0de9-90e9-d6e6-c9bffc5cb243/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.jpeg/512x512bb.jpg"
     },
     {
-      "name": "Google Photos",
+      "name": "Google Photos (Gunshot)",
       "bundleIdentifier": "com.google.photos",
       "developerName": "@ipavault",
       "versions": [
@@ -92,7 +92,7 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d2/0f/08/d20f08ff-dcf8-11d6-c65d-8b388413f543/Photos-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/512x512bb.jpg"
     },
     {
-      "name": "Infuse",
+      "name": "Infuse (Plus)",
       "bundleIdentifier": "com.firecore.infuse",
       "developerName": "@ipavault",
       "versions": [
@@ -108,7 +108,7 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/7f/51/a17f51d9-0071-ca29-9b94-d4c82637c34f/AppIcon-0-0-1x_U007epad-0-11-0-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
-      "name": "Reddit",
+      "name": "Reddit (RedditFilter)",
       "bundleIdentifier": "com.reddit.Reddit",
       "developerName": "@ipavault",
       "versions": [
