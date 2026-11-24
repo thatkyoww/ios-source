@@ -74,7 +74,7 @@
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.soda.png"
     },
     {
-      "name": "X (NFB+TWI)",
+      "name": "X",
       "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "@ipavault",
       "version": "12.46",
@@ -95,7 +95,7 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/30/ed/ad/30edad77-18a2-4e44-1276-1e530ff10d74/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
-      "name": "Reddit (RedditFilter)",
+      "name": "Reddit",
       "bundleIdentifier": "com.reddit.Reddit",
       "developerName": "@ipavault",
       "version": "2026.46.0",
@@ -116,7 +116,7 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/5d/4f/075d4fc3-9818-1565-cbf4-75c49455eb45/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
-      "name": "Google Photos (Gunshot)",
+      "name": "Google Photos",
       "bundleIdentifier": "com.google.photos",
       "developerName": "@ipavault",
       "version": "8.2.0",
@@ -137,7 +137,7 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d2/0f/08/d20f08ff-dcf8-11d6-c65d-8b388413f543/Photos-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/512x512bb.jpg"
     },
     {
-      "name": "Infuse (Plus)",
+      "name": "Infuse",
       "bundleIdentifier": "com.firecore.infuse",
       "developerName": "@ipavault",
       "version": "8.5.10",
