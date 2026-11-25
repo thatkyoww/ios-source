@@ -4,6 +4,22 @@
   "subtitle": "GitHub 릴리스 IPA 자동 소스",
   "apps": [
     {
+      "name": "Tor VPN",
+      "bundleIdentifier": "com.youssef.developer.Full-Browser",
+      "developerName": "@blatants",
+      "versions": [
+        {
+          "version": "12.7",
+          "date": "2026-11-25T00:00:00+00:00",
+          "downloadURL": "https://fastsign.dev/d/bs34ial0/blatants/13722-TOR_Browser_Onion_VPN_&_Orbot_v12_7_Subscription_Unlocked_blatant.ipa",
+          "size": 177824156
+        }
+      ],
+      "subtitle": "Alan 레포 TORVPN 미러",
+      "localizedDescription": "Mirrors TORVPN (Subscription Unlocked build) listed in Alan's Gigantic Repo (lite). Latest version only.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/9b/5f/219b5f48-0de9-90e9-d6e6-c9bffc5cb243/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.jpeg/512x512bb.jpg"
+    },
+    {
       "name": "X (NFB+TWI)",
       "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "@ipavault",
@@ -58,22 +74,6 @@
       "subtitle": "YouTube enhancer (SponsorBlock, downloads, background playback)",
       "localizedDescription": "Tracks the latest release IPA of itzzace/ytkace on GitHub. Standard build only (latest YouTube base); the iOS16 variant is excluded.",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/14/ce/45/14ce45d8-5ca6-1dfa-c4a5-4660061cf213/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
-    },
-    {
-      "name": "Tor VPN",
-      "bundleIdentifier": "com.youssef.developer.Full-Browser",
-      "developerName": "AppTesters IPA Repo",
-      "versions": [
-        {
-          "version": "12.6",
-          "date": "2026-11-21T00:00:00+00:00",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2026/TORVPN_12.6_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
-          "size": 177826052
-        }
-      ],
-      "subtitle": "Alan 레포 TORVPN 미러",
-      "localizedDescription": "Mirrors TORVPN (Subscription Unlocked build) listed in Alan's Gigantic Repo (lite). Latest version only.",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/9b/5f/219b5f48-0de9-90e9-d6e6-c9bffc5cb243/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.jpeg/512x512bb.jpg"
     },
     {
       "name": "Google Photos (Gunshot)",
