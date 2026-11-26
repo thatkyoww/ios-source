@@ -4,6 +4,22 @@
   "subtitle": "GitHub 릴리스 IPA 자동 소스",
   "apps": [
     {
+      "name": "X (NFB+TWI)",
+      "bundleIdentifier": "com.atebits.Tweetie2",
+      "developerName": "@ipavault",
+      "versions": [
+        {
+          "version": "12.46",
+          "date": "2026-11-26T00:00:00+00:00",
+          "downloadURL": "https://fastsign.dev/d/41dupptp/ipavault/1509-X%2012.46%20NFB+TWI%207.3.1%20%5B@ipavault%5D.ipa",
+          "size": 294105090
+        }
+      ],
+      "subtitle": "Alan 레포 NFB+TWI 합본 미러",
+      "localizedDescription": "Mirrors the X (NFB+TWI) combo build — NeoFreeBird + TWIGalaxy by @ipavault — from Alan's Gigantic Repo (lite). Latest version only.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/30/ed/ad/30edad77-18a2-4e44-1276-1e530ff10d74/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Tor VPN",
       "bundleIdentifier": "com.youssef.developer.Full-Browser",
       "developerName": "@blatants",
@@ -18,22 +34,6 @@
       "subtitle": "Alan 레포 TORVPN 미러",
       "localizedDescription": "Mirrors TORVPN (Subscription Unlocked build) listed in Alan's Gigantic Repo (lite). Latest version only.",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/9b/5f/219b5f48-0de9-90e9-d6e6-c9bffc5cb243/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.jpeg/512x512bb.jpg"
-    },
-    {
-      "name": "X (NFB+TWI)",
-      "bundleIdentifier": "com.atebits.Tweetie2",
-      "developerName": "@ipavault",
-      "versions": [
-        {
-          "version": "12.46",
-          "date": "2026-11-23T00:00:00+00:00",
-          "downloadURL": "https://fastsign.dev/d/41dupptp/ipavault/1509-X%2012.46%20NFB+TWI%207.3.1%20%5B@ipavault%5D.ipa",
-          "size": 292708756
-        }
-      ],
-      "subtitle": "Alan 레포 NFB+TWI 합본 미러",
-      "localizedDescription": "Mirrors the X (NFB+TWI) combo build — NeoFreeBird + TWIGalaxy by @ipavault — from Alan's Gigantic Repo (lite). Latest version only.",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/30/ed/ad/30edad77-18a2-4e44-1276-1e530ff10d74/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "YTKACE",
